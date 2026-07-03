@@ -14,7 +14,19 @@
   </nav>
 
   <section id="view-login"><!-- TODO --></section>
-  <section id="view-reserva" hidden><!-- TODO --></section>
+  <section id="view-reserva" hidden>
+  <h2>Reservar Turno</h2>
+  <label>Código universitario</label>
+  <input id="codigoRes" type="text" value="221045" readonly>
+  <label>Turno</label>
+  <select id="turnoRes">
+    <option>Turno 1 (11:30 AM - 12:15 PM)</option>
+    <option>Turno 2 (12:15 PM - 01:00 PM)</option>
+    <option>Turno 3 (01:00 PM - 01:45 PM)</option>
+  </select>
+  <button class="action" onclick="generarTicket()">Generar ticket</button>
+  <div id="reservaResult"></div>
+</section>
   <section id="view-acceso" hidden>
   <h2>Control de Acceso</h2>
   <label>Escanee código de ticket</label>
