@@ -15,8 +15,13 @@
 
   <section id="view-login"><!-- TODO --></section>
   <section id="view-reserva" hidden><!-- TODO --></section>
-  <section id="view-acceso" hidden><!-- TODO --></section>
-
+  <section id="view-acceso" hidden>
+  <h2>Control de Acceso</h2>
+  <label>Escanee código de ticket</label>
+  <input id="codigoTicket" type="text" placeholder="TICKET-221045-2026">
+  <button class="action" onclick="validarEntrada()">Validar entrada</button>
+  <div id="accesoResult"></div>
+</section>
   <script src="js/app.js"></script>
   <script src="js/login.js"></script>
   <script src="js/reserva.js"></script>
