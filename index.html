@@ -13,7 +13,13 @@
     <button onclick="showView('acceso')">Control de Acceso</button>
   </nav>
 
-  <section id="view-login"><!-- TODO --></section>
+  <section id="view-login">
+  <h2>Identificacion del Estudiante</h2>
+  <label>Codigo universitario</label>
+  <input id="loginCodigo" type="text" placeholder="221045">
+  <button class="action" onclick="identificarEstudiante()">Verificar codigo</button>
+  <div id="loginResult"></div>
+</section>
   <section id="view-reserva" hidden>
   <h2>Reservar Turno</h2>
   <label>Código universitario</label>
