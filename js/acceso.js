@@ -11,7 +11,7 @@ function validarEntrada(){
     return;
   }
   if(t.estado === 'VALIDO'){
-    box.innerHTML = `<div class="result ok">Valido: ${t.nombre} &middot; ${t.turno}. Entregue la bandeja de alimentos.</div>`;
+    box.innerHTML = `<div class="result ok">Válido: ${t.nombre} · ${t.turno}. Entregue la bandeja de alimentos.</div>`;
     t.estado = 'SERVIDO';
   } else {
     box.innerHTML = `<div class="result err">Este ticket ya fue servido.</div>`;
